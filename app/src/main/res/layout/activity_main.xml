@@ -17,226 +17,260 @@
         android:layout_weight="1">
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:nestedScrollingEnabled="true">
 
         <TableRow>
+            <TextView android:text="Maker(Company)"/>
+            <EditText android:id="@+id/company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </TableRow>
+
+
+        <TableRow>
+            <TextView android:text="Model Number(Unique)"/>
+            <EditText android:id="@+id/model_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
             <TextView android:text="Sim Support"/>
             <EditText android:id="@+id/sim_support"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Phone Dimension"/>
             <EditText android:id="@+id/phone_dimension"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Phone Wieght"/>
             <EditText android:id="@+id/phone_wieght"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow>
-            <TextView android:text="Keypad"/>
-            <EditText android:id="@+id/keypad"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Screen Size"/>
             <EditText android:id="@+id/screensize"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Screen resolution"/>
             <EditText android:id="@+id/screen_resolution"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Screen Type"/>
             <EditText android:id="@+id/screen_type"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow>
-            <TextView android:text="Touch Type"/>
-            <EditText android:id="@+id/touch_type"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Screen Protection"/>
             <EditText android:id="@+id/screen_protection"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Camera"/>
             <EditText android:id="@+id/camera"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Flash"/>
             <EditText android:id="@+id/flash"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Front Camera"/>
             <EditText android:id="@+id/front_camera"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Operating system"/>
             <EditText android:id="@+id/operating_system"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Processor"/>
             <EditText android:id="@+id/processor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Ram"/>
             <EditText android:id="@+id/ram"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Gpu"/>
             <EditText android:id="@+id/gpu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="User Interface"/>
             <EditText android:id="@+id/user_interface"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Battery"/>
             <EditText android:id="@+id/battery"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow>
-            <TextView android:text="Edge"/>
-            <EditText android:id="@+id/edge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="3G"/>
             <EditText android:id="@+id/third_gen"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="4G"/>
             <EditText android:id="@+id/fourth_gen"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="WIFI"/>
             <EditText android:id="@+id/wifi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
+
             <TextView android:text="USB"/>
+
             <EditText android:id="@+id/usb"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Bluetooth"/>
             <EditText android:id="@+id/bluetooth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
 
         <TableRow>
             <TextView android:text="NFC"/>
-            <EditText android:id="@+id/nfc" />
+            <EditText android:id="@+id/nfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="External Display"/>
             <EditText android:id="@+id/external_display"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Internal Storage"/>
             <EditText android:id="@+id/internal_storage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Expandable"/>
             <EditText android:id="@+id/expandable"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
+
         <TableRow>
-            <TextView android:text="Sensor"/>
+            <TextView android:text="sensor"/>
             <EditText android:id="@+id/sensor"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <TextView android:text="Quick Charge"/>
             <EditText android:id="@+id/quick_charge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow>
             <Button android:id="@+id/submit"
-                android:text="Submit"/>
+                android:text="Submit"
+                android:layout_width="match_parent"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+
             <Button android:id="@+id/reset"
-                android:text="Reset"/>
+                android:text="Reset"
+                android:layout_width="match_parent"
+                style="@style/Widget.AppCompat.Button.Borderless" />
         </TableRow>
     </TableLayout>
     </ScrollView>
