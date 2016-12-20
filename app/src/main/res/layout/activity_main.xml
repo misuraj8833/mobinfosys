@@ -106,6 +106,14 @@
         </TableRow>
 
         <TableRow>
+            <TextView android:text="Ram"/>
+            <EditText android:id="@+id/ram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
             <TextView android:text="Flash"/>
             <EditText android:id="@+id/flash"
                 android:layout_width="wrap_content"
@@ -132,14 +140,6 @@
         <TableRow>
             <TextView android:text="Processor"/>
             <EditText android:id="@+id/processor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-        </TableRow>
-
-        <TableRow>
-            <TextView android:text="Ram"/>
-            <EditText android:id="@+id/ram"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
@@ -196,7 +196,6 @@
         <TableRow>
 
             <TextView android:text="USB"/>
-
             <EditText android:id="@+id/usb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -262,15 +261,11 @@
         </TableRow>
 
         <TableRow>
-            <Button android:id="@+id/submit"
-                android:text="Submit"
+            <Button android:id="@+id/send"
+                android:text="Send"
                 android:layout_width="match_parent"
                 style="@style/Widget.AppCompat.Button.Borderless" />
 
-            <Button android:id="@+id/reset"
-                android:text="Reset"
-                android:layout_width="match_parent"
-                style="@style/Widget.AppCompat.Button.Borderless" />
         </TableRow>
     </TableLayout>
     </ScrollView>
