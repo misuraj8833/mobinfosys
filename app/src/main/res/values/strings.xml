@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MobInfoSys</string>
+    <string-array name="maker_array">
+        <item>Apple</item>
+        <item>Samsung</item>
+        <item>Micromax</item>
+        <item>YU</item>
+        <item>Redmi</item>
+    </string-array>
+
 </resources>

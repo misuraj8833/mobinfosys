@@ -13,23 +13,29 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:scrollbars="none"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:scrollbars="none">
 
     <TableLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:nestedScrollingEnabled="true">
 
-        <TableRow>
+        <TableRow android:layout_width="match_parent">
             <TextView android:text="Maker(Company)"/>
-            <EditText android:id="@+id/company"
-                android:layout_width="wrap_content"
+
+            <Spinner
+                android:id="@+id/maker_spinner"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="none" />
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="54dp"
+                android:layout_marginStart="54dp"
+                android:popupBackground="@android:color/holo_blue_bright" />
         </TableRow>
 
 
@@ -145,7 +151,9 @@
                 android:layout_weight="1"/>
         </TableRow>
 
-        <TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
             <TextView android:text="Gpu"/>
             <EditText android:id="@+id/gpu"
                 android:layout_width="wrap_content"
@@ -262,11 +270,12 @@
 
         <TableRow>
             <Button android:id="@+id/send"
-                android:text="Send"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
-                style="@style/Widget.AppCompat.Button.Borderless" />
+                android:text="Send" />
 
         </TableRow>
     </TableLayout>
     </ScrollView>
+
 </RelativeLayout>

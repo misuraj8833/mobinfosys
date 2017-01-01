@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.3"
     defaultConfig {
         applicationId "com.blaclisters.mobinfosys"
-        minSdkVersion 14
+        minSdkVersion 19
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -17,10 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    packagingOptions{
-        exclude'META-INF/LICENSE'
-        exclude'META-INF/LICENSE-FIREBASE.txt'
-        exclude'META-INF/NOTICE'
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
     }
 }
 
@@ -29,13 +29,18 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    //for firebase ui such as FirebaseListAdapter
+    //for firebase object creation
+    //for snackbar
     compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.google.firebase:firebase-database:9.6.1'
+    compile 'com.google.firebase:firebase-database:10.0.1'
+    compile 'com.firebaseui:firebase-ui:0.2.0'
+    compile 'com.firebase:firebase-client-android:2.3.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
     testCompile 'junit:junit:4.12'
-    compile'com.firebaseui:firebase-ui:0.2.0' //for firebase ui such as FirebaseListAdapter
-    compile'com.firebase:firebase-client-android:2.3.1' //for firebase object creation
-    compile 'com.android.support:design:24.2.1'  //for snackbar
 }
+
 
 
 apply plugin: 'com.google.gms.google-services'
